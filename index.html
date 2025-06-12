@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para mi amor Ángel 💖</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to right, #ffe1e1, #ffd6f3, #ffe0b3);
+      color: #5c0036;
+      text-align: center;
+      padding: 30px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      color:  #d63384;
+      text-shadow: 1px 1px 2px #fff0f5;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card {
+      background:  #fff0f6;
+      border-radius: 15px;
+      border: 2px solid #ff85a2;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: #ffe6f0;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .visible {
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .emoji {
+      font-size: 1.5em;
+      margin: 10px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .heart {
+      position: fixed;
+      color: #ff69b4;
+      animation: float 8s linear infinite;
+      opacity: 0.8;
+      font-size: 24px;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💌 Para mi novio Ángel 💌</h1>
+
+  <p class="emoji">💘</p>
+
+  <!-- Cartas -->
+  <div class="card" onclick="toggleContent('carta1')">📜 Haz clic para leer una carta
+    <div id="carta1" class="hidden carta">Mi amor Ángel A veces me quedo en silencio, no porque no tenga nada que decirte, sino porque lo que siento por ti no cabe en palabras. Tu amor me habita de una manera tan profunda que a veces me cuesta creer que seas real, que existas en esta vida y que, de todas las personas del mundo, me hayas elegido a mí. 💖</div>
+  </div>
+
+  <div class="card" onclick="toggleContent('carta2')">💝 Otro mensaje especial
+    <div id="carta2" class="hidden carta">Eres mi alegría, mi paz, mi todo. No cambiaría nada de ti. Te amo con el alma Contigo he aprendido que el amor no solo se dice, se demuestra. En tus gestos, en tu mirada, en tu forma de cuidarme sin pedir nada a cambio, encuentro la paz que siempre soñé. Eres mi refugio en los días grises y mi alegría en los días de sol.
+
+No sé qué hiciste, pero desde que llegaste, todo tiene más sentido. Me haces querer ser mejor, me impulsas, me sanas. A tu lado, el mundo es más amable, más cálido, más nuestro. 🌟</div>
+  </div>
+
+<div class="card" onclick="toggleContent('carta3')">💝 Otro mensaje especial
+ <div id="carta3" class="hidden carta">Gracias por ser el guardián de mis secretos, de mis luces y también de mis sombras. Eres, sin duda, uno de los regalos más hermosos que la vida me dio. 
+Con todo lo que soy. 🌟</div>
+ </div>
+
+  <div class="card" onclick="toggleContent('carta4')">✨ Secreto #1
+    <div id="carta4" class="hidden carta">Eres el único al que le confiaría estos secretos que guardo en lo más hondo de mí:
+
+A veces me asusta lo mucho que te amo. Es un amor tan inmenso que me desborda, como si te llevara tatuado en el alma desde antes de conocerte. Me da vértigo imaginar un futuro sin ti, porque ya formas parte de cada uno de mis sueños.🤭💓</div>
+  </div>
+
+  <div class="card" onclick="toggleContent('carta5')">💌 Secreto #2
+    <div id="carta5" class="hidden carta">Guardo también un rincón de mi corazón donde imagino cosas simples contigo: despertar a tu lado en una casa llena de luz, bailar contigo en la cocina mientras suena una canción vieja, o mirarte dormir y pensar: “qué suerte la mía”. 🏡❤️</div>
+  </div>
+
+  <div class="card" onclick="toggleContent('carta6')">🌹 Secreto #3
+    <div id="carta6" class="hidden carta">Y hay algo más… cada vez que me miras con esos ojos que me desarman, siento que soy capaz de todo, que valgo más, que merezco amor, porque tú me haces sentir así: completa, fuerte, viva. siempre serías tú, mi Ángel. ✨🥰</div>
+  </div>
+
+  <!-- Regalo -->
+  <div class="card" onclick="toggleContent('regalo')">🎁 Haz clic para ver tu regalo sorpresa
+    <div id="regalo" class="hidden carta">
+      ¡Sorpresa! 🧸 Esta cancion es especial,solo para ti. ❤️<br>
+      <a href="https://youtu.be/69npN04PwL0?si=JUklo9BcB7TaPJk3" target="_blank">🎶 Escúchala aquí</a>
+    </div>
+  </div>
+
+ <div class="card" onclick="toggleContent('regalo2')">🎁 Haz clic para ver tu otro regalo sorpresa
+    <div id="regalo2" class="hidden carta">
+      ¡Sorpresa! 🧸 solo para ti. ❤️<br>
+      <a href="https://youtu.be/Ho-Eh-91qk8?si=WPBBXSWtsqXunmYB" target="_blank">🎶 Escúchala aquí</a>
+    </div>
+  </div>
+
+  <p class="emoji">💘</p>
+
+  <!-- Sonido de apertura -->
+  <audio id="openSound" src="https://cdn.pixabay.com/download/audio/2022/03/22/audio_f2b3e5653e.mp3?filename=message-pop-alert-129689.mp3"></audio>
+
+  <!-- Corazones flotantes -->
+  <script>
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      const sound = document.getElementById("openSound");
+
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        content.classList.add("visible");
+        sound.currentTime = 0;
+        sound.play();
+      } else {
+        content.classList.add("hidden");
+        content.classList.remove("visible");
+      }
+    }
+
+    // Corazones flotantes
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerText = '💖';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = (Math.random() * 20 + 20) + 'px';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 8000);
+    }
+
+    setInterval(createHeart, 500);
+  </script>
+
+</body>
+</html>
